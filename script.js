@@ -120,10 +120,10 @@ var loadNextQuestion = function() {
     ulEl.appendChild(liEl4);
 
 
-    document.body.removeChild(liEl);
-    document.body.removeChild(liEl2);
-    document.body.removeChild(liEl3);
-    document.body.removeChild(liEl4);
+    // document.body.removeChild(liEl);
+    // document.body.removeChild(liEl2);
+    // document.body.removeChild(liEl3);
+    // document.body.removeChild(liEl4);
 }
 
 
@@ -163,10 +163,10 @@ var loadNextQuestion2 = function() {
     ulEl.appendChild(liEl4);
 
 
-    document.body.removeChild(liEl);
-    document.body.removeChild(liEl2);
-    document.body.removeChild(liEl3);
-    document.body.removeChild(liEl4);
+    // document.body.removeChild(liEl);
+    // document.body.removeChild(liEl2);
+    // document.body.removeChild(liEl3);
+    // document.body.removeChild(liEl4);
 }
 
 
@@ -206,10 +206,10 @@ var loadNextQuestion3 = function() {
     ulEl.appendChild(liEl4);
 
 
-    document.body.removeChild(liEl);
-    document.body.removeChild(liEl2);
-    document.body.removeChild(liEl3);
-    document.body.removeChild(liEl4);
+    // document.body.removeChild(liEl);
+    // document.body.removeChild(liEl2);
+    // document.body.removeChild(liEl3);
+    // document.body.removeChild(liEl4);
 }
 
 
@@ -249,10 +249,10 @@ var loadNextQuestion4 = function() {
     ulEl.appendChild(liEl4);
 
 
-    document.body.removeChild(liEl);
-    document.body.removeChild(liEl2);
-    document.body.removeChild(liEl3);
-    document.body.removeChild(liEl4);
+    // document.body.removeChild(liEl);
+    // document.body.removeChild(liEl2);
+    // document.body.removeChild(liEl3);
+    // document.body.removeChild(liEl4);
 }
 
 
