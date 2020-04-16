@@ -2,6 +2,7 @@ var header = document.querySelector(".header");
 var questionHolder = document.querySelector(".questionHolder");
 var startButton = document.querySelector(".startButton");
 
+
 var questions = [
     question = {
         title: "Commonly used data types DO NOT include",
@@ -40,6 +41,28 @@ var questions = [
     }
 ];
 
+// var myVar = setInterval(function myTimer() {
+//     var d = new Date();
+//     document.body.innerHTML = d.toLocaleTimeString();
+//   }, 1000);
+
+
+// function countDown() {
+
+//     var countDownEl = document.createElement("p")
+//     var timeLeft = 75;
+//     setInterval(function() {
+//     countDownEl.textContent = timeLeft + " seconds remaining";
+//     timeLeft--;
+//   }, 1000);
+
+
+//     document.body.appendChild(countDownEl);
+// }
+// countDown();
+
+
+
 // Have first start quiz button
 var addQuestion = function() {
     header.textContent = questions[0].title;
@@ -65,6 +88,8 @@ var addQuestion = function() {
     liEl4.className = "answer4";
     liEl4.id = "q1a4";
     liEl.addEventListener("click", loadNextQuestion);
+    // <button class="answer" id="q1a1" onclick=(loadNextQuestion)>strings</button>
+    // Anytime there is an event listener, there is an event in the function that is passed in
     liEl2.addEventListener("click", loadNextQuestion);
     liEl3.addEventListener("click", loadNextQuestion);
     liEl4.addEventListener("click", loadNextQuestion);
@@ -84,7 +109,26 @@ var addQuestion = function() {
 
 
 
-var loadNextQuestion = function() {
+var loadNextQuestion = function(event) {
+    // Create a new variable, assign it to event.target.textContent
+    // Write an if/else statement to see if the textContent equals to the right answer, say true, else false.
+    // Print out to the page if it was right or wrong
+    var answer = event.target.textContent;
+    var answer1El = document.createElement("h2")
+    if (answer === "3. alerts") {
+        alert("Correct!");
+
+        answer1El.textContent = "Correct!";
+    } else {
+        alert("Incorrect!");
+
+        answer1El.textContent = "Incorrect!";
+
+    }
+    
+
+    
+
     header.textContent = questions[1].title;
 
     questionHolder.textContent = "";
@@ -95,10 +139,13 @@ var loadNextQuestion = function() {
     var liEl3 = document.createElement("button");
     var liEl4 = document.createElement("button");
 
+
     liEl.textContent = questions[1].answer1;
     liEl2.textContent = questions[1].answer2;
     liEl3.textContent = questions[1].answer3;   
     liEl4.textContent = questions[1].answer4;
+
+    // answer1El.textContent = "Correct!"
 
     liEl.className = "answer";
     liEl.id = "q1a1";
@@ -118,6 +165,8 @@ var loadNextQuestion = function() {
     ulEl.appendChild(liEl2);
     ulEl.appendChild(liEl3);
     ulEl.appendChild(liEl4);
+
+    questionHolder.appendChild(answer1El)
 
 
     // document.body.removeChild(liEl);
@@ -255,10 +304,13 @@ var loadNextQuestion4 = function() {
     // document.body.removeChild(liEl4);
 }
 
+// For improvement:
+// Try to put the function in a for loop and only write it one time
 
 var loadNextQuestion5 = function() {
-    header.textContent = questions[5].title;
+    // header.textContent = questions[5].title;
 
+    questionHolder.textContent = "";
 
 }
 
